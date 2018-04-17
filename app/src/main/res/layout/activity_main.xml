@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    tools:context="com.example.vipu.canador.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_centerInParent="true"
+        android:layout_margin="50dp"
+
+        android:layout_above="@+id/layoutButton">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtLeft"
+            android:text="hidfs"
+            android:textColor="@color/colorAccent"
+            android:background="@drawable/capsule_shape_button"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtRight"
+            android:paddingLeft="10dp"
+            android:text="Right"
+            android:textSize="20dp"
+            android:layout_centerInParent="true"
+            android:paddingRight="20dp"
+            android:layout_toRightOf="@+id/txtLeft"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layoutButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_centerInParent="true"
+        android:padding="10dp"
+        >
+
+
+        <TextView
+            android:id="@+id/txtViewNext1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/capsule_shape_button"
+            android:drawableRight="@drawable/ic_next"
+            android:gravity="center_horizontal"
+            android:text="Next"
+            android:textColor="@color/colorAccent"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/txtViewPrev1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_toLeftOf="@+id/txtViewNext1"
+            android:background="@drawable/capsule_button_prev"
+            android:drawableLeft="@drawable/ic_prev"
+            android:gravity="center_horizontal"
+            android:text="Prev"
+            android:textColor="#000"
+            android:textSize="20sp" />
+    </RelativeLayout>
+</RelativeLayout>
